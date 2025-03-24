@@ -2,7 +2,7 @@
 using namespace std;
 int factorial(int n) {
     if (n <= 1) return 1;
-    return n * 1;
+    return n * factorial(n - 1);
 }
 bool isPrime(int n) {
     if (n < 2) return false;
